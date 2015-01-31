@@ -54,6 +54,6 @@ credentials += Credentials("Sonatype Nexus Repository Manager",
                            "${WERCKER_MAVEN_CENTRAL_SONATYPE_PASSWORD}")
 EOF
 
-echo "$WERCKER_MAVEN_CENTRAL_SECRING" | base64 -D > wercker-secring.gpg
+echo "$WERCKER_MAVEN_CENTRAL_SECRING" | base64 -d > wercker-secring.gpg
 
 echo "$WERCKER_MAVEN_CENTRAL_PGP_PASSPHRASE" | sbt publish-signed
