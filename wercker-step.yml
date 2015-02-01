@@ -1,0 +1,30 @@
+name: maven_central
+version: 0.1.1
+description: Publish to Maven Central
+kyewords:
+  - publish
+  - central
+  - sonatype
+  - nexus
+properties:
+  license-name:
+    type: string
+    required: true
+  license-url:
+    type: string
+    required: true
+  scm-url:
+    type: string
+    required: true
+  scm-connection:
+    type: string
+    required: true
+  developer-id:
+    type: string
+    required: true
+  developer-name:
+    type: string
+    required: true
+  developer-url:
+    type: string
+    required: true
