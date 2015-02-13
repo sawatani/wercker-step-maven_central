@@ -1,5 +1,5 @@
-. ./setup.sh
-. ./check-args.sh
+. $WERCKER_STEP_ROOT/setup.sh
+. $WERCKER_STEP_ROOT/check-args.sh
 
 pomExtra="
   <url>${WERCKER_MAVEN_CENTRAL_PROJECT_URL}</url>

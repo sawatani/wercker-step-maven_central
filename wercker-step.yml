@@ -1,5 +1,5 @@
 name: maven_central
-version: 0.2.1
+version: 0.2.2
 description: Publish to Maven Central
 kyewords:
   - publish
