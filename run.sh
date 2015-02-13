@@ -22,7 +22,7 @@ pomExtra="
     </developer>
   </developers>"
 
-echo "POM Extra: $pomExtra"
+debug "POM Extra: $pomExtra"
 
 mkdir -vp project
 cat <<EOF >> project/plugins.sbt

@@ -21,7 +21,7 @@ then
 		then
 			if [ "$(echo "$line1" | grep 'MIT')x" == "x" ]
 			then
-				echo "No match license"
+				warn "No match license"
 			else
 				NAME="MIT License"
 				URL="http://www.opensource.org/licenses/mit-license.php"
@@ -29,7 +29,7 @@ then
 		else
 			if [ "$(echo "$line2" | grep 'Version 2.0')x" == "x" ]
 			then
-				echo "No match license"
+				warn "No match license"
 			else
 				NAME="Apache License, Version 2.0"
 				URL="http://www.apache.org/licenses/LICENSE-2.0.txt"
@@ -42,7 +42,7 @@ then
 			then
 				if [ "$(echo "$line2" | grep 'Version 2,')x" == "x" ]
 				then
-					echo "No match license"
+					warn "No match license"
 				else
 					NAME="GNU General Public License Version 2 (GPL 2)"
 					URL="http://www.gnu.org/licenses/gpl-2.0.txt"
