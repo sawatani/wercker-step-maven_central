@@ -15,7 +15,7 @@ properties:
     required: false
   scm-url:
     type: string
-    required: true
+    required: false
   scm-connection:
     type: string
     required: false
