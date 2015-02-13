@@ -31,3 +31,15 @@ properties:
   developer-url:
     type: string
     required: false
+  repository-username:
+    type: string
+    required: true
+  repository-password:
+    type: string
+    required: true
+  pgp-secring:
+    type: string
+    required: true
+  pgp-passphrase:
+    type: string
+    required: true

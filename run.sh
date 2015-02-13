@@ -1,6 +1,8 @@
 . ./setup.sh
+. ./check-args.sh
 
-pomExtra="<url>${WERCKER_MAVEN_CENTRAL_PROJECT_URL}</url>
+pomExtra="
+  <url>${WERCKER_MAVEN_CENTRAL_PROJECT_URL}</url>
   <licenses>
     <license>
       <name>${WERCKER_MAVEN_CENTRAL_LICENSE_NAME}</name>
@@ -55,10 +57,10 @@ pomExtra := (${pomExtra})
  
 credentials += Credentials("Sonatype Nexus Repository Manager", 
                            "oss.sonatype.org", 
-                           "${WERCKER_MAVEN_CENTRAL_SONATYPE_USERNAME}",
-                           "${WERCKER_MAVEN_CENTRAL_SONATYPE_PASSWORD}")
+                           "${WERCKER_MAVEN_CENTRAL_REPOSITORY_USERNAME}",
+                           "${WERCKER_MAVEN_CENTRAL_REPOSITORY_PASSWORD}")
 EOF
 
-echo "$WERCKER_MAVEN_CENTRAL_SECRING" | base64 -d > wercker-secring.gpg
+echo "$WERCKER_MAVEN_CENTRAL_PGP_SECRING" | base64 -d > wercker-secring.gpg
 
 echo "$WERCKER_MAVEN_CENTRAL_PGP_PASSPHRASE" | sbt publish-signed
