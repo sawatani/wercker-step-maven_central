@@ -7,7 +7,7 @@ Wercker Step for Publish to Maven Central
 
 ## Arguments
 
-Almost arguments are recognized from environment if repository is in Github.
+Almost arguments are recognized from environment if project is in Github.
 
 | Name | Required | Description |
 |---|:-:|---|
