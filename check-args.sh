@@ -1,6 +1,6 @@
 check () {
 	name="WERCKER_MAVEN_CENTRAL_$(echo $1 | tr '-' '_' | tr '[a-z]' '[A-Z]')"
-	value=$(eval "echo \${$name}")
+	value="$(eval "echo \${$name}")"
 	if [ ! -n "$value" ]; then
 		fail "Could not recognize: $1"
 	fi
