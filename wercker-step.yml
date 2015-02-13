@@ -1,5 +1,5 @@
 name: maven_central
-version: 0.1.1
+version: 0.1.2
 description: Publish to Maven Central
 kyewords:
   - publish
@@ -12,19 +12,19 @@ properties:
     required: true
   license-url:
     type: string
-    required: true
+    required: false
   scm-url:
     type: string
     required: true
   scm-connection:
     type: string
-    required: true
+    required: false
   developer-id:
     type: string
-    required: true
+    required: false
   developer-name:
     type: string
-    required: true
+    required: false
   developer-url:
     type: string
-    required: true
+    required: false

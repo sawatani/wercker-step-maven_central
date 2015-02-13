@@ -1,3 +1,5 @@
+. ./setup.sh
+
 mkdir -vp project
 cat <<EOF >> project/plugins.sbt
  
