@@ -9,7 +9,7 @@ kyewords:
 properties:
   license-name:
     type: string
-    required: true
+    required: false
   license-url:
     type: string
     required: false
